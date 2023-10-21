@@ -1,0 +1,71 @@
+/* <-------NORMALICE-------> */
+* {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #f5ebe0;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a {
+  color: black;
+}
+
+/* <-------FIN NORMALICE-------> */
+/* <----Estilos general----> */
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 40px;
+}
+
+li {
+  font-size: 16px;
+}
+
+li a:hover {
+  color: #f0d493;
+}
+
+.home nav {
+  background-image: url("/assets/portadaYoga.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  text-align: start;
+}
+
+p {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+}
+
+section {
+  display: flex;
+}
+
+.objetivo {
+  text-align: left;
+}
+
+.imgObjetive {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-left: 10px;
+}
+
+.imgContact {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+}
+
+footer {
+  background-color: aliceblue;
+  width: auto;
+  height: 100px;
+}
