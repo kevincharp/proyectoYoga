@@ -76,6 +76,7 @@ nav ul li {
 }
 .divObjetivo {
   width: 50%;
+  margin-left: 50px;
 }
 .clases {
   display: flex;
