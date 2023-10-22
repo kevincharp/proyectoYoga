@@ -1,49 +1,128 @@
 /* <-------NORMALICE-------> */
 * {
   font-family: "Ubuntu", sans-serif;
-  background-color: #f5ebe0;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
+}
+body {
+  background: linear-gradient(121deg, rgba(190, 166, 255, 1) 23%, rgba(132, 61, 255, 1) 73%, rgba(107, 4, 253, 1) 99%);
 }
 
 a {
   color: black;
 }
-
+a:hover {
+  color: #f2f0ff;
+}
+li:hover,
+.nombre:hover,
+.logo img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+p {
+  font-size: 25px;
+}
 /* <-------FIN NORMALICE-------> */
 /* <----Estilos general----> */
-ul {
+
+header {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 5px 10%;
 }
 
-li {
-  font-size: 16px;
-}
-
-li a:hover {
-  color: #f0d493;
-}
-
-.home nav {
-  background-image: url("/assets/portadaYoga.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  text-align: start;
-}
-
-section {
-  display: flex;
-}
-
-footer {
-  background-color: aliceblue;
+.logo img {
+  height: 60px;
   width: auto;
-  height: 100px;
+}
+nav ul li {
+  display: inline-block;
+  padding: 20px;
+  font-size: 30px;
+}
+.presentacion {
+  position: absolute;
+  top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.presentacion img {
+  padding: 50px;
+}
+.nombre {
+  font-size: 80px;
+  margin: 0 70px 0 15px;
+  color: #f2f0ff;
+}
+
+.objetivo {
+  display: flex;
+  align-items: center;
+}
+.objetivo h2 {
+  font-size: 60px;
+  margin: 0 0 50px 0;
+}
+.objetivo img {
+  margin: 0 0 0 90px;
+  padding: 50px;
+}
+.divObjetivo {
+  width: 50%;
+}
+.clases {
+  display: flex;
+  align-items: center;
+}
+.clases h2 {
+  font-size: 60px;
+  margin: 0 0 50px 0;
+}
+.clases img {
+  margin: 0 0 0 90px;
+  padding: 50px;
+}
+.divClases {
+  width: 50%;
+}
+.contacto {
+  display: flex;
+  align-items: center;
+}
+.contacto h2 {
+  font-size: 60px;
+  margin: 0 0 50px 0;
+}
+.contacto img {
+  margin: 0 0 0 90px;
+  padding: 50px;
+}
+.divContacto {
+  width: 50%;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  color: #f2f0ff;
+  background-color: #843dff;
+  border-radius: 10px;
+  font-size: 25px;
+  padding: 10px;
+  margin: 35px;
+  width: fit-content;
+}
+
+button:hover {
+  color: #f2f0ff;
+  background-color: #9f75ff;
+  cursor: pointer;
 }
