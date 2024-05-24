@@ -5,26 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contacto.css">
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu" rel="stylesheet">
     <!-- Fin fuentes -->
 
-    <title>Profesora de Yoga 🧘🏻‍♀️ Belen Luppino</title>
+    <title>Yoga 🧘🏻‍♀️ Belen Luppino</title>
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <img src="./assets/loto.png" alt="logo1">
+            <a href="index.html">
+                <img src="./assets/loto.png" alt="logo1">
+            </a>
         </div>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="about.html">Sobre Mi</a></li>
                 <li><a href="class.html">Mis clases</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#contact-section">Contacto</a></li>
             </ul>
         </nav>
         <div class="presentacion">
@@ -48,17 +51,33 @@
         </div>
 
     </section>
-    <section class="contacto">
+    <section class="contacto" id="contact-section">
         <div class="divContacto">
             <h2>Contacto</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ullam libero deserunt dolor eaque nam, natus impedit quia quis! Rem, harum! Ex repudiandae autem maxime quam praesentium, in molestias officia? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium impedit nam natus, veniam dolorum quaerat ipsam consequuntur dolorem obcaecati ea, fugit sapiente alias minima rem quo temporibus unde voluptatum! Temporibus?</p>
-            <button>ESCRIBIME</button>
+            <section class="contact-section">
+                <form id="formularioContacto" class="contact-form" onclick="return enviarFormulario()">
+                    <h1>Formulario de Contacto</h1>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>        
+                    <label for="asunto">Asunto:</label>
+                    <select id="asunto" name="asunto" required>
+                        <option value="">Seleccione un asunto</option>
+                        <option value="Consulta">Consulta</option>
+                        <option value="Turnos">Turnos</option>
+                        <option value="Clases">Clases</option>
+                        <option value="Otros">Otros</option>
+                    </select>        
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>        
+                    <input type="button" value="Enviar">
+                </form>
+            </section>
         </div>
         <img src="./assets/guerrero.png" alt="guerrero">
-
     </section>
     <footer></footer>
-
+    
+    <script type="text/javascript" src="./contacto.js"></script>
 </body>
 
 </html>

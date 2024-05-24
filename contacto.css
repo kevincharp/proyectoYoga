@@ -1,0 +1,88 @@
+.divContacto {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+  }
+  
+  .contact-form {
+    background: #ffffff4f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .contact-form h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    display: block;
+  }
+  
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .contact-form input[type="submit"] {
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .contact-form input[type="submit"]:hover {
+    background: #45a049;
+  }
+  
+  /** Fondo animado  **/
+  html,
+  body {
+    background: linear-gradient(
+      121deg,
+      rgba(190, 166, 255, 1) 23%,
+      rgba(132, 61, 255, 1) 73%,
+      rgba(107, 4, 253, 1) 99%
+    );
+    background-size: 400% 400%;
+    animation: gradientAnimation 5s ease infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
