@@ -55,7 +55,7 @@
         <div class="divContacto">
             <h2>Contacto</h2>
             <section class="contact-section">
-                <form id="formularioContacto" class="contact-form" onclick="return enviarFormulario()">
+                <form id="formularioContacto" class="contact-form" onsubmit="return enviarFormulario()">
                     <h1>Formulario de Contacto</h1>
                     <label for="email">Correo Electrónico:</label>
                     <input type="email" id="email" name="email" required>        
@@ -69,7 +69,7 @@
                     </select>        
                     <label for="mensaje">Mensaje:</label>
                     <textarea id="mensaje" name="mensaje" rows="4" required></textarea>        
-                    <input type="button" value="Enviar">
+                    <input type="submit" value="Enviar">
                 </form>
             </section>
         </div>
