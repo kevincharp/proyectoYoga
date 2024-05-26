@@ -1,0 +1,132 @@
+/* ABOUT ME */
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(121deg, rgb(190, 166, 255) 23%, rgb(132, 61, 255) 73%, rgb(107, 4, 253) 99%);
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.background {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.legging-image, .image {
+  flex: 1 1 40%;
+  background: url('path-to-image.jpg') no-repeat center center;
+  background-size: cover;
+  height: 300px;
+  margin-right: 20px;
+}
+
+.bio-content {
+  flex: 1 1 55%;
+}
+
+.belen-lupino {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.aprendizaje-infinito {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.bio {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact-section {
+  margin-bottom: 40px;
+}
+
+.contact, .question {
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.link .border {
+  width: 100px;
+  height: 2px;
+  background-color: #fff;
+  margin-right: 10px;
+}
+
+.link .write-to-me {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.nav-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-list ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav-list ul li a {
+  color: #fff;
+  text-decoration: none;
+  }
