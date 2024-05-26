@@ -13,3 +13,4 @@ Link al repositorio:
 Link deploy:
 
 [Despliegue](https://kevincharp.github.io/proyectoYoga/)
+.
