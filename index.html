@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="contacto.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/clases.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,8 +27,8 @@
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="about.html">Sobre Mi</a></li>
-                <li><a href="class.html">Mis clases</a></li>
+                <li><a href="#sobreMi">Sobre Mi</a></li>
+                <li><a href="#clases">Mis clases</a></li>
                 <li><a href="#contact-section">Contacto</a></li>
             </ul>
         </nav>
@@ -35,19 +37,35 @@
             <img src="./assets/flor-de-loto.png" alt="flor-de-loto">
         </div>
     </header>
-    <section class="objetivo">
+    <main>
+    <section class="sobreMi" id="sobreMi">
         <div class="divObjetivo">
-            <h2>Objetivo</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ullam libero deserunt dolor eaque nam, natus impedit quia quis! Rem, harum! Ex repudiandae autem maxime quam praesentium, in molestias officia? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium impedit nam natus, veniam dolorum quaerat ipsam consequuntur dolorem obcaecati ea, fugit sapiente alias minima rem quo temporibus unde voluptatum! Temporibus?</p>
+            <h2>Sobre mi</h2>
+            <p>
+                Fundadora de Yoga, emprendedora, guía de montaña y amante de los deportes outdoor, aficionada de sus herramientas más sutiles, detalladas y profundas, hasta las más prácticas y funcionales.
+            </p>
+            <br/>
+            <p>
+                La sensibilidad y presencia en el registro del cuerpo en la actuación, me acercaron a su estudio, su lenguaje y biomecánica.
+            </p>
+            <p>
+                Comparto lo que aprendo, experimento y me ayuda.
+            </p>
+            <br/>
+            <p>
+                Una de mis intenciones es reconciliarme con mi cuerpo y desafiarlo en sus posibilidades. Exponerlo a la incomodidad en marcos seguros.
+            </p>
         </div>
         <img src="./assets/extendido.png" alt="extendido">
 
     </section>
-    <section class="clases">
+    <section class="clases" id="clases">
         <img src="./assets/asiento.png" alt="asiento">
         <div class="divcClases">
             <h2>Mis Clases</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ullam libero deserunt dolor eaque nam, natus impedit quia quis! Rem, harum! Ex repudiandae autem maxime quam praesentium, in molestias officia? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium impedit nam natus, veniam dolorum quaerat ipsam consequuntur dolorem obcaecati ea, fugit sapiente alias minima rem quo temporibus unde voluptatum! Temporibus?</p>
+            <h3 id="tituloClase" class="fade">CLASE GRUPAL</h3>
+            <p id="descripcionClase" class="fade">Las clases grupales de yoga ofrecen una experiencia enriquecedora y transformadora para los participantes, permitiéndoles sumergirse en una práctica milenaria en compañía de otros entusiastas del yoga.</p>
+    </div>   
         </div>
 
     </section>
@@ -75,9 +93,35 @@
         </div>
         <img src="./assets/guerrero.png" alt="guerrero">
     </section>
-    <footer></footer>
+</main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>Yoga 🧘🏻‍♀️ Belen Luppino</h3>
+                <p>&copy; 2024 Belen Luppino. Todos los derechos reservados.</p>
+            </div>
+            <div class="footer-center">
+                <ul>
+                    <li><a href="privacy.html">Política de Privacidad</a></li>
+                    <li><a href="terms.html">Términos de Servicio</a></li>
+                    <li><a href="#contact-section">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <h4>Síguenos</h4>
+                <ul class="socials">
+                    <li><a href="https://www.facebook.com"><img src="./assets/icons/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com"><img src="./assets/icons/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="https://www.twitter.com"><img src="./assets/icons/twitter.png" alt="Twitter"></a></li>
+                    <li><a href="https://www.youtube.com"><img src="./assets/icons/youtube.png" alt="YouTube"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     
-    <script type="text/javascript" src="./contacto.js"></script>
+    
+    <script type="text/javascript" src="./js/contacto.js"></script>
+    <script type="text/javascript" src="./js/clases.js"></script>
 </body>
 
 </html>

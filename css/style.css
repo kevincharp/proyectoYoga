@@ -17,12 +17,6 @@ a {
 a:hover {
   color: #f2f0ff;
 }
-li:hover,
-.nombre:hover,
-.logo img:hover {
-  transform: scale(1.2);
-  cursor: pointer;
-}
 p {
   font-size: 25px;
 }
@@ -51,7 +45,8 @@ nav ul li {
   top: 10%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;  
+  animation: respirar 4s ease-in-out infinite alternate;
 }
 .presentacion img {
   padding: 50px;
@@ -62,15 +57,29 @@ nav ul li {
   color: #f2f0ff;
 }
 
-.objetivo {
+/* Efecto respirar */ 
+
+@keyframes respirar {
+  0% {
+      transform: scale(1); 
+  }
+  50% {
+      transform: scale(1.1); 
+  }
+  100% {
+      transform: scale(1); 
+  }
+}
+
+.sobreMi {
   display: flex;
   align-items: center;
 }
-.objetivo h2 {
+.sobreMi h2 {
   font-size: 60px;
   margin: 0 0 50px 0;
 }
-.objetivo img {
+.sobreMi img {
   margin: 0 0 0 90px;
   padding: 50px;
 }
