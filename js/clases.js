@@ -31,13 +31,11 @@ const textos = [
   },
 ];
 
-// Elementos HTML
 const tituloElement = document.getElementById("tituloClase");
 const descripcionElement = document.getElementById("descripcionClase");
 
 let currentIndex = 0;
 
-// Función para cambiar el texto cada cierto tiempo
 function cambiarTexto() {
   tituloElement.classList.add("hide");
   descripcionElement.classList.add("hide");
@@ -47,11 +45,10 @@ function cambiarTexto() {
     descripcionElement.textContent = textos[currentIndex].descripcion;
     tituloElement.classList.remove("hide");
     descripcionElement.classList.remove("hide");
-    currentIndex = (currentIndex + 1) % textos.length; // Circula entre los textos disponibles
-  }, 500); // Tiempo de espera para la transición
+    currentIndex = (currentIndex + 1) % textos.length; 
+  }, 500); 
 }
 
-// Cambia el texto inicialmente
 cambiarTexto();
 
 // Cambia el texto cada 3 segundos (3000 milisegundos)
