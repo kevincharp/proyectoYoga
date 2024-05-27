@@ -1,6 +1,6 @@
 .fade {
     opacity: 1;
-    transition: opacity 0.5s ease; /* Ajusta la duración de la transición según desees */
+    transition: opacity 0.5s ease;
 }
 
 .fade.hide {
