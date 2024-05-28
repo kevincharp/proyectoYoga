@@ -1,8 +1,17 @@
 .fade {
-    opacity: 1;
-    transition: opacity 0.5s ease;
+  opacity: 1;
+  transition: opacity 0.5s ease;
 }
 
 .fade.hide {
-    opacity: 0;
+  opacity: 1;
+}
+
+#ClasesImgs {    
+  min-width: 612px;
+  min-height: 612px;
+  max-width: 612px;
+  max-height: 612px;
+  width: auto;
+  height: auto;
 }
