@@ -4,24 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/clases.css">
-    <link rel="stylesheet" href="./css/contacto.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- CSS -->
+
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu" rel="stylesheet">
-    <!-- Fin fuentes -->
-
+    <!-- Fuentes -->
     <title>Yoga 🧘🏻‍♀️ Belen Luppino</title>
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <img src="./assets/loto.png" alt="logo1">
-        </div>
+        <div class="barraNav">
+            <a href="#presentacion"><img src="./assets/loto.png" alt="logo"></a>
         <nav>
             <ul>
                 <li><a href="#sobreMi">Sobre Mi</a></li>
@@ -29,39 +27,40 @@
                 <li><a href="#contact-section">Contacto</a></li>
             </ul>
         </nav>
-        <div class="presentacion">
+        
+    </div>
+        <div class="presentacion" id="presentacion">
             <h1 class="nombre">BELEN LUPPINO</h1>
             <img src="./assets/flor-de-loto.png" alt="flor-de-loto">
         </div>
     </header>
     <main>
-    <section class="sobreMi" id="sobreMi">
-        <div class="divObjetivo">
-            <h2>Sobre mi</h2>
-            <p>
-                Fundadora de Yoga, emprendedora, guía de montaña y amante de los deportes outdoor, aficionada de sus herramientas más sutiles, detalladas y profundas, hasta las más prácticas y funcionales.
-            </p>
-            <br/>
-            <p>
-                La sensibilidad y presencia en el registro del cuerpo en la actuación, me acercaron a su estudio, su lenguaje y biomecánica.
-            </p>
-            <p>
-                Comparto lo que aprendo, experimento y me ayuda.
-            </p>
-            <br/>
-            <p>
-                Una de mis intenciones es reconciliarme con mi cuerpo y desafiarlo en sus posibilidades. Exponerlo a la incomodidad en marcos seguros.
-            </p>
-        </div>
-        <img src="./assets/extendido.png" alt="extendido">
-
-    </section>
+        <section class="sobreMi" id="sobreMi">
+            <div class="divObjetivo">
+                <h2>Sobre mi</h2>
+                <p>
+                    Fundadora de Yoga, emprendedora, guía de montaña y amante de los deportes outdoor, aficionada de sus herramientas más sutiles, detalladas y profundas, hasta las más prácticas y funcionales.
+                </p>
+                <br/>
+                <p>
+                    La sensibilidad y presencia en el registro del cuerpo en la actuación, me acercaron a su estudio, su lenguaje y biomecánica.
+                </p>
+                <p>
+                    Comparto lo que aprendo, experimento y me ayuda.
+                </p>
+                <br/>
+                <p>
+                    Una de mis intenciones es reconciliarme con mi cuerpo y desafiarlo en sus posibilidades. Exponerlo a la incomodidad en marcos seguros.
+                </p>
+            </div>
+            <img id="dynamicImage" class="fade" src="./assets/extendido.png" alt="extendido">
+        </section>
     <section class="clases" id="clases">
         <img src="./assets/asiento.png" alt="asiento">
         <div class="divcClases">
             <h2>Mis Clases</h2>
-            <h3 id="tituloClase" class="fade">CLASE GRUPAL</h3>
-            <p id="descripcionClase" class="fade">Las clases grupales de yoga ofrecen una experiencia enriquecedora y transformadora para los participantes, permitiéndoles sumergirse en una práctica milenaria en compañía de otros entusiastas del yoga.</p>
+            <h3 id="tituloClase" class="fade">YOGA MAN</h3>
+            <p id="descripcionClase" class="fade">Las clases de yoga exclusivas para hombres ofrecen un espacio dedicado y adaptado a las necesidades y objetivos específicos del cuerpo masculino. Estas sesiones se enfocan en mejorar la fuerza, la flexibilidad y la resistencia. </p>
     </div>   
         </div>
 
@@ -88,7 +87,7 @@
                 </form>
             </section>
         </div>
-        <img src="./assets/guerrero.png" alt="guerrero">
+        <div id="map"></div>
     </section>
 </main>
     <footer>
@@ -100,17 +99,19 @@
             <div class="footer-right">
                 <h4>Síguenos</h4>
                 <ul class="socials">
-                    <li><a href="https://www.facebook.com"><img src="./assets/icons/facebook.png" alt="Facebook"></a></li>
-                    <li><a href="https://www.instagram.com"><img src="./assets/icons/instagram.png" alt="Instagram"></a></li>
-                    <li><a href="https://www.twitter.com"><img src="./assets/icons/twitter.png" alt="Twitter"></a></li>
-                    <li><a href="https://www.youtube.com"><img src="./assets/icons/youtube.png" alt="YouTube"></a></li>
+                    <li><a href="https://www.facebook.com" target="_blank"><img src="./assets/icons/facebook.png" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><img src="./assets/icons/instagram.png" alt="Instagram"></a></li>
+                    <li><a href="https://www.twitter.com" target="_blank"><img src="./assets/icons/twitter.png" alt="Twitter"></a></li>
+                    <li><a href="https://www.youtube.com" target="_blank"><img src="./assets/icons/youtube.png" alt="YouTube"></a></li>
                 </ul>
             </div>
         </div>
     </footer>
-    
-    <script type="text/javascript" src="./js/contacto.js"></script>
-    <script type="text/javascript" src="./js/clases.js"></script>
+    <!-- scripts -->
+    <script type="module" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBect1kG09IOTroqxKBKtO0mlSsbmxDTjA&callback=initMap" async defer></script>
+    <!-- scripts -->
 </body>
 
 </html>

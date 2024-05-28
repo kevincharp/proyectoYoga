@@ -36,7 +36,7 @@ const descripcionElement = document.getElementById("descripcionClase");
 
 let currentIndex = 0;
 
-function cambiarTexto() {
+export function cambiarTexto() {
   tituloElement.classList.add("hide");
   descripcionElement.classList.add("hide");
 
@@ -49,7 +49,4 @@ function cambiarTexto() {
   }, 500); 
 }
 
-cambiarTexto();
-
-// Cambia el texto cada 3 segundos (3000 milisegundos)
 setInterval(cambiarTexto, 3000);

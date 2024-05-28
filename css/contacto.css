@@ -57,6 +57,14 @@
   .contact-form input[type="submit"]:hover {
     background: #45a049;
   }
+
+  #map {
+    width: 700px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
   
   /** Fondo animado  **/
   html,
@@ -82,7 +90,7 @@
       background-position: 0% 50%;
     }
   }
+  
   html {
     scroll-behavior: smooth;
   }
-  
