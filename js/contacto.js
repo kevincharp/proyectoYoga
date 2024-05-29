@@ -1,13 +1,13 @@
 export function enviarFormulario() {
-  const email = document.getElementById("email");
+  const email = document.getElementById("email").value.trim();
   const asunto = document.getElementById("asunto");
-  const mensaje = document.getElementById("mensaje");
+  const mensaje = document.getElementById("mensaje").value.trim();
 
   let valid = true;
   let err = [];
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  if (email.value.trim() === "") {
+  if (email === "") {
     err.push("* Debe colocar un email. \n");
     valid = false;
   } else if (!emailPattern.test(email.value)) {
@@ -20,7 +20,7 @@ export function enviarFormulario() {
     valid = false;
   }
 
-  if (mensaje.value.trim() === "") {
+  if (mensaje === "") {
     err.push("* Debe de colocar un mensaje. \n");
     valid = false;
   }

@@ -24,6 +24,7 @@
             <ul>
                 <li><a href="#sobreMi">Sobre Mi</a></li>
                 <li><a href="#clases">Mis clases</a></li>
+                <li><a href="#reservar-turno-section">Turnos</a></li>
                 <li><a href="#contact-section">Contacto</a></li>
             </ul>
         </nav>
@@ -63,8 +64,31 @@
             <p id="descripcionClase" class="fade">Las clases de yoga exclusivas para hombres ofrecen un espacio dedicado y adaptado a las necesidades y objetivos específicos del cuerpo masculino. Estas sesiones se enfocan en mejorar la fuerza, la flexibilidad y la resistencia. </p>
     </div>   
         </div>
-
     </section>
+    <section class="reservar-turno" id="reservar-turno-section">
+        <div class="divReservarTurno">
+            <h2>Reservar Turno para Clases de Yoga</h2>
+            <br>
+            <form id="formularioReserva" class="reserva-form" onsubmit="return enviarFormularioReserva()">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="emailReserva">Correo Electrónico:</label>
+                <input type="email" id="emailReserva" name="emailReserva" required>
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                
+                <label for="fecha">Fecha de la Clase:</label>
+                <input type="date" id="fecha" name="fecha" required>
+                
+                <label for="hora">Hora de la Clase:</label>
+                <input type="time" id="hora" name="hora" required>
+                
+                <input type="submit" value="Reservar Turno">
+            </form>
+        </div>
+    </section>  
     <section class="contacto" id="contact-section">
         <div class="divContacto">
             <h2>Contacto</h2>
