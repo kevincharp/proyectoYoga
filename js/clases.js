@@ -1,4 +1,4 @@
-const textos = [
+const arrClases = [
   {
     titulo: "CLASE GRUPAL",
     urlImg: "https://www.freevector.com/uploads/vector/preview/29937/Small-Yoga-Class.jpg",
@@ -44,15 +44,15 @@ const ImagenElement = document.getElementById("ClasesImgs");
 let currentIndex = 0;
 
 export function cambiarTexto() {  
-  currentIndex = (currentIndex + 1) % textos.length; 
+  currentIndex = (currentIndex + 1) % arrClases.length; 
   tituloElement.style.opacity = 0;
   descripcionElement.style.opacity = 0;
   ImagenElement.style.opacity = 0;
 
   setTimeout(() => {
-    ImagenElement.src = textos[currentIndex].urlImg;
-    tituloElement.textContent = textos[currentIndex].titulo;
-    descripcionElement.textContent = textos[currentIndex].descripcion;
+    ImagenElement.src = arrClases[currentIndex].urlImg;
+    tituloElement.textContent = arrClases[currentIndex].titulo;
+    descripcionElement.textContent = arrClases[currentIndex].descripcion;
     ImagenElement.style.opacity = 1; 
     tituloElement.style.opacity = 1; 
     descripcionElement.style.opacity = 1; 
