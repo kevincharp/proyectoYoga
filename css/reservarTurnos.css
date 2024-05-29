@@ -25,6 +25,7 @@
 .reserva-form input[type="email"],
 .reserva-form input[type="tel"],
 .reserva-form input[type="date"],
+.reserva-form select,
 .reserva-form input[type="time"] {
     width: 100%;
     padding: 10px;

@@ -4,6 +4,7 @@ export function enviarFormularioReserva() {
     const telefono = document.getElementById('telefono').value.trim();
     const fecha = document.getElementById('fecha').value.trim();
     const hora = document.getElementById('hora').value.trim();
+    const tipoClase = document.getElementById('TipoClase').value.trim();
 
     let valid = true;
     let err = [];
@@ -12,7 +13,7 @@ export function enviarFormularioReserva() {
     const fechaHoraActual = new Date();
     const fechaHoraSeleccionada = new Date(`${fecha}T${hora}`);
 
-    if (nombre === '' && email === '' && telefono === '' && fecha === '' && hora === '') {
+    if (nombre === '' && email === '' && telefono === '' && fecha === '' && hora === '' && tipoClase === '') {
         err.push('* Por favor, complete todos los campos del formulario.');
         valid = false;
     }
@@ -37,6 +38,11 @@ export function enviarFormularioReserva() {
     }
     else if (!telefonoRegex.test(telefono)) {
         err.push('* Por favor, ingrese un número de teléfono válido. \n');
+        valid = false;
+    }
+
+    if(tipoClase === ''){
+        err.push('* Debe ingresar una clase. \n');
         valid = false;
     }
 
