@@ -47,4 +47,4 @@ Las contribuciones son bienvenidas. Si deseas contribuir, por favor, sigue estos
 ## Licencia 📄
 Este proyecto está bajo la licencia [Codo a Codo](LICENSE).
 
-Creador del README Kevin Charpentier
+Modificando el READM para prueba de pull request en rama develop
