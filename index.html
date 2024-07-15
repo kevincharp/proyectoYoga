@@ -68,38 +68,53 @@
     <section class="reservar-turno" id="reservar-turno-section">
         <div class="divReservarTurno">
             <h2>Reservar Turno para Clases de Yoga</h2>
-            <br>
             <form id="formularioReserva" class="reserva-form" onsubmit="return enviarFormularioReserva()">
-                <label for="nombre">Nombre Completo:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                
-                <label for="emailReserva">Correo Electrónico:</label>
-                <input type="email" id="emailReserva" name="emailReserva" required>
-                
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" required>
-
-                <label for="tipoClase">Clase:</label>
-                <select id="tipoClase" name="tipoClase" required>
-                    <option value="">Seleccione una clase</option>
-                    <option value="Grupal">Grupal</option>
-                    <option value="Kids">Kids</option>
-                    <option value="Virtual">Virtual</option>
-                    <option value="Mum">Mum</option>
-                    <option value="Woman">Woman</option>
-                    <option value="Man">Man</option>
-                </select>  
-                
-                <label for="fecha">Fecha de la Clase:</label>
-                <input type="date" id="fecha" name="fecha" required>
-                
-                <label for="hora">Hora de la Clase:</label>
-                <input type="time" id="hora" name="hora" required>
-                
-                <input type="submit" value="Reservar Turno">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="emailReserva">Correo Electrónico:</label>
+                    <input type="email" id="emailReserva" name="emailReserva" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label for="tipoClase">Clase:</label>
+                    <select id="tipoClase" name="tipoClase" required onchange="actualizarHorarios()">
+                        <option value="">Seleccione una clase</option>
+                        <option value="Yoga Man">Yoga Man</option>
+                        <option value="Yoga Kids">Yoga Kids</option>
+                        <option value="Yoga funcional">Yoga funcional</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha de la Clase:</label>
+                    <input type="date" id="fecha" name="fecha" required onchange="actualizarHorarios()">
+                </div>
+                <div class="form-group">
+                    <label for="hora">Hora de la Clase:</label>
+                    <select id="hora" name="hora" required></select>
+                </div>
+                <button type="submit">Reservar Turno</button>
             </form>
+
+            <div class="turnos-agendados" id="turnos-agendados-section">
+                <div class="seccion-turnos-agendados">
+                    <h2>Turnos Agendados</h2>
+                    <ul id="listaTurnos"></ul>
+                </div>
+            </div>
+         
+
         </div>
-    </section>  
+
+    </section>
+
+    <script src="scripts.js"></script>
+    
     <section class="contacto" id="contact-section">
         <div class="divContacto">
             <h2>Contacto</h2>
